@@ -4,7 +4,7 @@ A [Qt5 designer widget plugin](https://doc.qt.io/qt-5/designer-creating-custom-w
 
 Based upon [QPlainTextEdit](https://doc.qt.io/qt-5/qplaintextedit.html), with added comment and syntax highlighting plus line highlighting for use showing currently executing line in a GUI.
 
-To use on Windows/Linux/Mac clone and build with:
+To use clone and build with:
 ```bash
 gh repo clone QGCoder/libqgcodeeditor && cd libqgcodeeditor
 qmake && make -j$(nproc)
