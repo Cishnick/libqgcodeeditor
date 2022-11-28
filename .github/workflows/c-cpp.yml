@@ -36,7 +36,7 @@ jobs:
         VERSION="$(git describe --tags | sed -e "s/^v//" -e "s/-/+git/")"
         dch --create \
             --distribution ${TARGET} \
-            --package qgcoder \
+            --package libqgcodeeditor \
             --newversion ${VERSION}~${TARGET}1 \
             "Automatic build from Github"
         debuild -S -sa -us -uc -d
