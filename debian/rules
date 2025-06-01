@@ -1,7 +1,0 @@
-#!/usr/bin/make -f
-
-%:
-	dh $@
-
-override_dh_auto_configure:
-	QT_SELECT=qt5 dh_auto_configure -- LIB_DIR=/usr/lib/$(DEB_HOST_MULTIARCH)

@@ -1,6 +1,7 @@
 #include <QSyntaxHighlighter>
 
 #include <QHash>
+#include <QRegularExpression>
 #include <QTextCharFormat>
 
 class QGCodeSyntaxHighlighter : public QSyntaxHighlighter
@@ -16,7 +17,7 @@ protected:
 private:
     struct HighlightingRule
         {
-        QRegExp pattern;
+        QRegularExpression pattern;
         QTextCharFormat format;
         };
 
